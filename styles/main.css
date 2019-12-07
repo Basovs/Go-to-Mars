@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #061b38;
+  padding: 20px;
+}
+
+.main-nav__main-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main-nav__main-list__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

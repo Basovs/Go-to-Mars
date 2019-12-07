@@ -1,0 +1,19 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $color--nav-background;
+    padding: 20px;
+    &__main-list {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 30px;
+        &__item {
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
+    }
+}
