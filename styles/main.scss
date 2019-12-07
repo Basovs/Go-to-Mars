@@ -1,5 +1,7 @@
 @import "variables/variables";
-@import "overall-styles/nav";
+@import "partial/nav";
+@import "partial/header";
+@import "partial/footer";
 
 * {
     padding: 0;

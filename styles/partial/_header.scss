@@ -1,0 +1,9 @@
+.main-header {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-block-size: 100vh;
+    background-image: url(../../img/mars-one-page/hero-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
