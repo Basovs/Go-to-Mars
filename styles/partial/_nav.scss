@@ -13,8 +13,12 @@
                 text-decoration: none;
                 color: #ffffff;
                 font-weight: bold;
+                padding-bottom: 5px;
             }
             a:hover {
+                border-bottom: solid 3px #e32700;
+            }
+            a:active {
                 border-bottom: solid 3px #e32700;
             }
         }
