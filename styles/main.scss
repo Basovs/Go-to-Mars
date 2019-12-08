@@ -2,6 +2,7 @@
 @import "partial/nav";
 @import "partial/header";
 @import "mars-one-page/section1";
+@import "mars-one-page/section2";
 @import "partial/footer";
 
 * {
@@ -12,8 +13,8 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
-.active,
-.btn:hover {
-    background-color: #666;
-    color: white;
-}
+// .active,
+// .btn:hover {
+//     background-color: #666;
+//     color: white;
+// }
