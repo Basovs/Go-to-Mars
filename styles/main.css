@@ -1,3 +1,39 @@
+.ball {
+  -webkit-animation-name: spinner;
+          animation-name: spinner;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* Tells the animation what to-do outside */
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360);
+            transform: rotate(360);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360);
+            transform: rotate(360);
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +114,8 @@
 
 .section2__title {
   font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .section2__article {
@@ -107,6 +145,8 @@
 .section2__article__img {
   max-inline-size: 50%;
   padding: 40px 0;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .section2__article__img--base {
@@ -119,7 +159,7 @@
   margin: 30px 0;
   cursor: pointer;
   border-radius: 10px;
-  border: solid 1px #2c4f80;
+  border: solid 2px #2c4f80;
   color: #2c4f80;
   font-size: 14px;
   background-color: #ffffff;

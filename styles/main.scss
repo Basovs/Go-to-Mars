@@ -1,3 +1,21 @@
+.ball {
+    animation-name: spinner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* Tells the animation what to-do outside */
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360);
+    }
+}
+
 @import "variables/variables";
 @import "partial/nav";
 @import "partial/header";
