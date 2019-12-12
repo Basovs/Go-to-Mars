@@ -233,8 +233,11 @@
 }
 
 .faq__section1__grid-item3 {
-  padding: 16px;
   background-color: #ffffff;
+}
+
+.faq__section1__grid-item3__article {
+  padding: 16px;
 }
 
 .faq__section1__grid-item3__img {
