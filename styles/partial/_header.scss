@@ -9,20 +9,21 @@
     position: relative;
     overflow: hidden;
     &__article {
-        justify-self: center;
-        margin-top: 20vh;
+        justify-self: flex-end;
+        margin: 15vh 20vw 0 0;
         z-index: 2;
         padding: 0 20px;
         display: flex;
         flex-direction: column;
-        width: 290px;
+        width: 370px;
         &__title {
             color: #ffffff;
             border-bottom: solid 5px #ffffff;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
         &__text {
             color: #436dac;
+            font-size: 2rem;
         }
     }
 }
@@ -30,11 +31,11 @@
     position: absolute;
     content: "";
     width: 130vw;
-    height: 110vh;
+    height: 150vh;
     border-radius: 100% / 100%;
     background: linear-gradient(#00132c, rgba(21, 52, 98, 0.9));
-    transform: rotate(12deg);
-    top: -40vh;
-    left: -5vw;
+    transform: rotate(15deg);
+    top: -83vh;
+    left: -15vw;
     border: 15px solid #436dac;
 }

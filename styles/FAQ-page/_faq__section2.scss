@@ -1,0 +1,14 @@
+.faq__section1 {
+    &__grid-item3 {
+        &__img {
+            inline-size: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.faq__section2 {
+    &__img {
+        inline-size: 100%;
+        object-fit: cover;
+    }
+}
