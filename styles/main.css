@@ -209,6 +209,34 @@
   background-color: #ffffff;
 }
 
+.faq__section1 {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.faq__section1__title {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.faq__section1__grid-item1 {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.faq__section1__grid-item2 {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.faq__section1__grid-item3 {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
 .faq__section1__grid-item3__img {
   inline-size: 100%;
   -o-object-fit: cover;

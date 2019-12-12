@@ -1,0 +1,26 @@
+.faq__section1 {
+    display: grid;
+    gap: 20px;
+    background-color: $color--section-background;
+    padding: 20px;
+    &__title {
+        padding: 40px 0;
+        text-align: center;
+    }
+    &__grid-item1 {
+        padding: 16px;
+        background-color: #ffffff;
+    }
+    &__grid-item2 {
+        padding: 16px;
+        background-color: #ffffff;
+    }
+    &__grid-item3 {
+        padding: 16px;
+        background-color: #ffffff;
+        &__img {
+            inline-size: 100%;
+            object-fit: cover;
+        }
+    }
+}
