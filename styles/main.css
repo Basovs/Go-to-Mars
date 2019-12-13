@@ -287,6 +287,18 @@
   padding: 20px 0;
 }
 
+.jtc-section1 {
+  padding: 40px 16px;
+}
+
+.input-wrapper {
+  display: block;
+}
+
+.input-wrapper__input {
+  inline-size: 100%;
+}
+
 .main-footer {
   display: -ms-grid;
   display: grid;
