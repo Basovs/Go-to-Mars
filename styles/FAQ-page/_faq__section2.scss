@@ -3,4 +3,10 @@
         inline-size: 100%;
         object-fit: cover;
     }
+    &__article {
+        margin: 0 16px 50px 16px;
+        &__title {
+            padding: 20px 0;
+        }
+    }
 }

@@ -212,9 +212,9 @@
 .faq__section1 {
   display: -ms-grid;
   display: grid;
-  gap: 20px;
+  gap: 16px;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 16px;
 }
 
 .faq__section1__title {
@@ -227,17 +227,44 @@
   background-color: #ffffff;
 }
 
+.faq__section1__grid-item1__title {
+  padding: 26px 0;
+}
+
 .faq__section1__grid-item2 {
   padding: 16px;
   background-color: #ffffff;
 }
 
+.faq__section1__grid-item2__title {
+  padding: 26px 0;
+}
+
+.faq__section1__grid-item2__list {
+  padding: 20px 0 20px 20px;
+}
+
+.faq__section1__grid-item2__list li {
+  font-weight: bold;
+}
+
 .faq__section1__grid-item3 {
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .faq__section1__grid-item3__article {
   padding: 16px;
+}
+
+.faq__section1__grid-item3__article__title {
+  padding: 20px 0;
 }
 
 .faq__section1__grid-item3__img {
@@ -250,6 +277,14 @@
   inline-size: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.faq__section2__article {
+  margin: 0 16px 50px 16px;
+}
+
+.faq__section2__article__title {
+  padding: 20px 0;
 }
 
 .main-footer {

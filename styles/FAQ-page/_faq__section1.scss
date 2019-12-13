@@ -1,8 +1,8 @@
 .faq__section1 {
     display: grid;
-    gap: 20px;
+    gap: 16px;
     background-color: $color--section-background;
-    padding: 20px;
+    padding: 16px;
     &__title {
         padding: 40px 0;
         text-align: center;
@@ -10,15 +10,32 @@
     &__grid-item1 {
         padding: 16px;
         background-color: #ffffff;
+        &__title {
+            padding: 26px 0;
+        }
     }
     &__grid-item2 {
         padding: 16px;
         background-color: #ffffff;
+        &__title {
+            padding: 26px 0;
+        }
+        &__list {
+            padding: 20px 0 20px 20px;
+            li {
+                font-weight: bold;
+            }
+        }
     }
     &__grid-item3 {
         background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
         &__article {
             padding: 16px;
+            &__title {
+                padding: 20px 0;
+            }
         }
         &__img {
             inline-size: 100%;
