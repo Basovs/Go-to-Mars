@@ -1,42 +1,84 @@
 .section2 {
-    background-color: $color--section-background;
-    padding: 40px 0;
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-        padding: 20px 0;
-    }
-    &__article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 20px;
-        margin: 20px;
-        &__title {
-            inline-size: 100%;
-        }
-        &__text {
-            padding: 20px 0;
-        }
-        &__img {
-            max-inline-size: 50%;
-            padding: 40px 0;
-            transform: rotate(360deg);
-            &--base {
-                max-inline-size: 100%;
-                padding-bottom: 40px;
-            }
-        }
+  background-color: $color--section-background;
+  padding: 40px 16px;
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+  &__grid-container {
+    display: grid;
+    gap: 16px;
+    &__item {
+      background-color: #ffffff;
+      padding: 20px;
+      &__img {
+        object-fit: cover;
+        inline-size: 100%;
+        max-inline-size: 100%;
+        max-block-size: 100%;
+        padding: 40px;
+      }
+      &__article {
+        display: grid;
+        padding: 16px 0;
         &__btn {
-            padding: 10px 30px;
-            margin: 30px 0;
-            cursor: pointer;
-            border-radius: 10px;
-            border: solid 2px #2c4f80;
-            color: #2c4f80;
-            font-size: 14px;
-            background-color: #ffffff;
+          padding: 10px 30px;
+          margin: 30px 0;
+          cursor: pointer;
+          border-radius: 10px;
+          border: solid 2px #2c4f80;
+          color: #2c4f80;
+          font-size: 14px;
+          background-color: #ffffff;
+          justify-self: center;
         }
+      }
     }
+  }
+}
+.article3 {
+  padding: unset;
+  &__img {
+    padding: unset;
+  }
+  &__article {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 700px) {
+  .section2 {
+    &__grid-container {
+      display: grid;
+      justify-content: center;
+      margin: 100px 100px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "top-left aside"
+        "bottom-left aside";
+      gap: 20px;
+      &__item {
+        display: flex;
+        background-color: #ffffff;
+        &__img {
+          object-fit: cover;
+          max-inline-size: 100%;
+          max-block-size: 100%;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .article1 {
+    grid-area: top-left;
+  }
+  .article2 {
+    grid-area: bottom-left;
+  }
+  .article3 {
+    grid-area: aside;
+    flex-direction: column;
+  }
 }
