@@ -10,21 +10,25 @@
     display: grid;
     gap: 16px;
     &__item {
+      display: grid;
       background-color: #ffffff;
       padding: 20px;
       &__img {
         object-fit: cover;
-        inline-size: 100%;
-        max-inline-size: 100%;
-        max-block-size: 100%;
-        padding: 40px;
+        max-inline-size: 80%;
+        max-block-size: 80%;
+        align-self: center;
+        justify-self: center;
       }
       &__article {
         display: grid;
         padding: 16px 0;
+        align-self: center;
+        max-inline-size: 500px;
+        justify-self: center;
         &__btn {
           padding: 10px 30px;
-          margin: 30px 0;
+          margin: 30px 0 0 0;
           cursor: pointer;
           border-radius: 10px;
           border: solid 2px #2c4f80;
@@ -40,33 +44,34 @@
 .article3 {
   padding: unset;
   &__img {
-    padding: unset;
+    padding: 0;
+    max-inline-size: 100%;
+    max-block-size: 100%;
   }
   &__article {
     padding: 16px;
+    align-self: center;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
   .section2 {
     &__grid-container {
-      display: grid;
-      justify-content: center;
-      margin: 100px 100px;
+      margin: 5%;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
         "top-left aside"
         "bottom-left aside";
-      gap: 20px;
       &__item {
-        display: flex;
-        background-color: #ffffff;
-        &__img {
-          object-fit: cover;
-          max-inline-size: 100%;
-          max-block-size: 100%;
-          padding: 20px;
+        grid-auto-flow: column;
+        &__article {
+          inline-size: 90%;
+          justify-self: center;
+          padding: 0;
+        }
+        &__article__btn {
+          justify-self: flex-start;
         }
       }
     }
@@ -75,10 +80,15 @@
     grid-area: top-left;
   }
   .article2 {
-    grid-area: bottom-left;
+    grid-area: aside;
+    grid-auto-flow: row;
   }
   .article3 {
-    grid-area: aside;
-    flex-direction: column;
+    grid-area: bottom-left;
+    &__img {
+      object-fit: cover;
+      padding: 0;
+      block-size: 100%;
+    }
   }
 }

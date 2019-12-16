@@ -1,41 +1,49 @@
 .main-header {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    min-block-size: 100vh;
-    background-image: url(../../img/mars-one-page/hero-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    &__article {
-        justify-self: flex-end;
-        margin: 15vh 20vw 0 0;
-        z-index: 2;
-        padding: 0 20px;
-        display: flex;
-        flex-direction: column;
-        width: 370px;
-        &__title {
-            color: #ffffff;
-            border-bottom: solid 5px #ffffff;
-            font-size: 3rem;
-        }
-        &__text {
-            color: #436dac;
-            font-size: 2rem;
-        }
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-block-size: 100vh;
+  background-image: url(../../img/mars-one-page/hero-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  &__article {
+    box-sizing: content-box;
+    justify-self: flex-end;
+    padding: 15vh 20vw 0 0;
+    z-index: 2;
+    width: 370px;
+    &__title {
+      box-sizing: border-box;
+      margin: 0 20px;
+      color: #ffffff;
+      border-bottom: solid 5px #ffffff;
+      font-size: 3rem;
     }
+    &__text {
+      box-sizing: border-box;
+      margin: 0 20px;
+      color: #436dac;
+      font-size: 2rem;
+    }
+  }
 }
 .main-header::after {
-    position: absolute;
-    content: "";
-    width: 130vw;
-    height: 150vh;
-    border-radius: 100% / 100%;
-    background: linear-gradient(#00132c, rgba(21, 52, 98, 0.9));
-    transform: rotate(15deg);
-    top: -83vh;
-    left: -15vw;
-    border: 15px solid #436dac;
+  position: absolute;
+  content: "";
+  width: 150vw;
+  height: 150vh;
+  top: -70vh;
+  left: -10vw;
+  border-radius: 100% / 100%;
+  background: linear-gradient(#00132c, rgba(21, 52, 98, 0.9));
+  transform: rotate(15deg);
+  border: 15px solid #436dac;
+}
+@media (min-width: 1100px) {
+  .main-header::after {
+    left: -40vh;
+    top: -80vh;
+  }
 }
