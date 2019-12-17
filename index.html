@@ -14,7 +14,9 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <img src="img/logo.svg" alt="Logo" class="main-nav__logo" />
+        <div class="img-wrapper">
+          <img src="img/logo.svg" alt="Logo" class="main-nav__logo" />
+        </div>
         <ul class="main-nav__main-list">
           <li class="main-nav__main-list__item">
             <a href="index.html" class="main-nav__main-list__item__a"
@@ -50,21 +52,27 @@
           The first men and women to go to Mars are going there to stay.
         </p>
       </article>
-      <img
-        src="img/mars-one-page/photo-1511798616182-aab3698ac53e.jpeg"
-        alt="Photo of skye in the dark"
-        class="section1__img"
-      />
+      <div class="img-wrapper">
+        <img
+          src="img/mars-one-page/photo-1511798616182-aab3698ac53e.jpeg"
+          alt="Photo of skye in the dark"
+          class="img-wrapper__img"
+        />
+      </div>
     </section>
     <section class="section2">
       <h2 class="section2__title">Be the earth closest neighbor</h2>
       <div class="section2__grid-container">
         <article class="section2__grid-container__item article1">
-          <img
-            src="img/mars-one-page/planet-red.png"
-            alt="Photo of mars"
-            class="section2__grid-container__item__img article1__img"
-          />
+          <div
+            class="img-wrapper section2__grid-container__item__img-wrapper article1__img"
+          >
+            <img
+              src="img/mars-one-page/planet-red.png"
+              alt="Photo of mars"
+              class="img-wrapper__img"
+            />
+          </div>
           <article class="section2__grid-container__item__article">
             <h3 class="section2__grid-container__item__article__title">
               Why Mars?
@@ -81,11 +89,15 @@
           </article>
         </article>
         <article class="section2__grid-container__item article2">
-          <img
-            src="img/mars-one-page/solar.svg"
-            alt="Photo of mars"
-            class="section2__grid-container__item__img article2__img"
-          />
+          <div
+            class="img-wrapper section2__grid-container__item__img-wrapper article2__img-wrapper"
+          >
+            <img
+              src="img/mars-one-page/solar.svg"
+              alt="Photo of mars"
+              class="img-wrapper__img"
+            />
+          </div>
           <article
             class="section2__grid-container__item__article article2__article"
           >
@@ -105,11 +117,16 @@
           </article>
         </article>
         <article class="section2__grid-container__item article3">
-          <img
-            src="img/mars-one-page/base.jpg"
-            alt="Photo of mars"
-            class="section2__grid-container__item__img article3__img"
-          />
+          <div
+            class="img-wrapper section2__grid-container__item__img-wrapper article3__img-wrapper"
+          >
+            <img
+              src="img/mars-one-page/base.jpg"
+              alt="Photo of mars"
+              class="img-wrapper__img article3__img-wrapper__img"
+              id="test"
+            />
+          </div>
           <article
             class="section2__grid-container__item__article article3__article"
           >
