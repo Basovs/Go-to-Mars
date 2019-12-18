@@ -1,148 +1,148 @@
 .img-wrapper {
-  position: relative;
-  &__img {
-    object-fit: contain;
-    block-size: 100%;
-    max-block-size: 100%;
-    inline-size: 100%;
-    max-inline-size: 100%;
-    // position: absolute;
-  }
+    position: relative;
+    &__img {
+        object-fit: cover;
+        block-size: 100%;
+        max-block-size: 100%;
+        inline-size: 100%;
+        max-inline-size: 100%;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
 }
 
 .section2 {
-  background-color: $color--section-background;
-  padding: 40px 16px;
-  &__title {
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px 0;
-  }
-  &__grid-container {
-    display: grid;
-    gap: 16px;
-    &__item {
-      display: flex;
-      flex-direction: column;
-      background-color: #ffffff;
-      padding: 0 20px 20px 20px;
-      &__img-wrapper {
-        align-self: center;
-        justify-self: center;
-        padding: 60px;
-      }
-      &__article {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        max-inline-size: 500px;
-        &__btn {
-          inline-size: 140px;
-          padding: 10px 30px;
-          margin: 30px 0;
-          cursor: pointer;
-          border-radius: 10px;
-          border: solid 2px #2c4f80;
-          color: #2c4f80;
-          font-size: 14px;
-          background-color: #ffffff;
-          align-self: center;
-        }
-      }
+    background-color: $color--section-background;
+    padding: 40px 16px;
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 0;
     }
-  }
+    &__grid-container {
+        display: grid;
+        gap: 16px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            padding: 0 20px 20px 20px;
+            &__img-wrapper {
+                // justify-self: center;
+                align-self: center;
+                padding: 60px;
+            }
+            &__article {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                max-inline-size: 500px;
+                &__btn {
+                    inline-size: 140px;
+                    padding: 10px 30px;
+                    margin: 30px 0;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: solid 2px #2c4f80;
+                    color: #2c4f80;
+                    font-size: 14px;
+                    background-color: #ffffff;
+                    align-self: center;
+                }
+            }
+        }
+    }
 }
 .article3 {
-  padding: 0;
-  &__img-wrapper {
-    max-inline-size: 100%;
-    max-block-size: 100%;
-    block-size: 100%;
     padding: 0;
-  }
-  &__article {
-    padding: 30px 16px 0 16px;
-  }
+    &__img-wrapper {
+        max-inline-size: 100%;
+        max-block-size: 100%;
+        block-size: 100%;
+        padding: 0;
+    }
+    &__article {
+        padding: 30px 16px 0 16px;
+    }
 }
 
 @media (min-width: 700px) {
-  .section2 {
-    &__grid-container {
-      margin: 5%;
-      &__item {
-        flex-direction: row;
-        padding: 0;
+    .section2 {
+        &__grid-container {
+            margin: 5%;
+            &__item {
+                flex-direction: row;
+                padding: 0;
+                &__img-wrapper {
+                    max-inline-size: 40%;
+                    padding: 9%;
+                }
+                &__article {
+                    inline-size: 80%;
+                    justify-self: center;
+                    padding: 20px;
+                }
+                &__article__btn {
+                    align-self: flex-start;
+                    margin: 20px 0 0 0;
+                }
+            }
+        }
+    }
+    .article3 {
         &__img-wrapper {
-          inline-size: 100%;
-          block-size: 100%;
-          max-inline-size: 40%;
-          padding: 9%;
+            padding: 0;
+            &__img {
+                object-fit: cover;
+            }
         }
-        &__article {
-          inline-size: 80%;
-          justify-self: center;
-          padding: 20px;
-        }
-        &__article__btn {
-          align-self: flex-start;
-          margin: 20px 0 0 0;
-        }
-      }
     }
-  }
-  .article3 {
-    &__img-wrapper {
-      padding: 0;
-      &__img {
-        object-fit: cover;
-      }
-    }
-  }
 }
 
 @media (min-width: 1100px) {
-  .section2 {
-    &__grid-container {
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "top-left aside"
-        "bottom-left aside";
-      gap: 20px;
-      &__item {
+    .section2 {
+        &__grid-container {
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "top-left aside"
+                "bottom-left aside";
+            gap: 20px;
+            &__item {
+                padding: 20px;
+                &__img-wrapper {
+                    padding: 0 60px;
+                }
+                &__article {
+                    inline-size: 80%;
+                    justify-self: center;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+    .article1 {
+        grid-area: top-left;
+    }
+    .article2 {
+        grid-area: aside;
+        flex-direction: column;
         padding: 20px;
         &__img-wrapper {
-          padding: 0 60px;
+            max-inline-size: 100%;
+            margin: 20px 0 30px 0;
         }
         &__article {
-          inline-size: 80%;
-          justify-self: center;
-          padding: 0 40px;
+            padding: 0;
         }
-      }
     }
-  }
-  .article1 {
-    grid-area: top-left;
-  }
-  .article2 {
-    grid-area: aside;
-    flex-direction: column;
-    padding: 20px;
-    &__img-wrapper {
-      max-inline-size: 100%;
-      margin: 20px 0 30px 0;
+    .article3 {
+        padding: 0;
+        grid-area: bottom-left;
+        &__img-wrapper {
+            padding: 0;
+            block-size: 100%;
+        }
     }
-    &__article {
-      padding: 0;
-    }
-  }
-  .article3 {
-    padding: 0;
-    grid-area: bottom-left;
-    &__img-wrapper {
-      padding: 0;
-      block-size: 100%;
-    }
-  }
 }

@@ -1,21 +1,21 @@
 .section1 {
-  display: flex;
-  flex-direction: column;
-  &__article {
-    max-inline-size: 60%;
-    padding: 50px 20px 40px 40px;
-    &__title {
-      padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &__article {
+        max-inline-size: 60%;
+        padding: 50px 20px 40px 40px;
+        &__title {
+            padding-bottom: 20px;
+        }
     }
-  }
 }
 
 @media (min-width: 830px) {
-  .section1 {
-    flex-direction: row-reverse;
-    &__article {
-      align-self: center;
-      padding: 50px 100px;
+    .section1 {
+        flex-direction: row-reverse;
+        &__article {
+            align-self: center;
+            padding: 50px 100px;
+        }
     }
-  }
 }

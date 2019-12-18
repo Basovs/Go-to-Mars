@@ -174,8 +174,8 @@
 }
 
 .img-wrapper__img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   block-size: 100%;
   max-block-size: 100%;
   inline-size: 100%;
@@ -215,8 +215,6 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   padding: 60px;
 }
 
@@ -275,8 +273,6 @@
     padding: 0;
   }
   .section2__grid-container__item__img-wrapper {
-    inline-size: 100%;
-    block-size: 100%;
     max-inline-size: 40%;
     padding: 9%;
   }
