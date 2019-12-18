@@ -225,7 +225,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 60px;
+  padding: 60px 60px 20px 60px;
   max-inline-size: 330px;
 }
 
@@ -284,6 +284,7 @@
   .section2__grid-container__item__img-wrapper {
     max-inline-size: 40%;
     min-inline-size: 40%;
+    padding: 60px;
   }
   .section2__grid-container__item__article {
     padding: 20px 40px;

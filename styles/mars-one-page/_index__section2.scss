@@ -16,7 +16,7 @@
             box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
             &__img-wrapper {
                 align-self: center;
-                padding: 60px;
+                padding: 60px 60px 20px 60px;
                 max-inline-size: 330px;
             }
             &__article {
@@ -66,6 +66,7 @@
                 &__img-wrapper {
                     max-inline-size: 40%;
                     min-inline-size: 40%;
+                    padding: 60px;
                 }
                 &__article {
                     padding: 20px 40px;
