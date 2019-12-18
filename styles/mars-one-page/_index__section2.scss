@@ -18,13 +18,14 @@
                 // justify-self: center;
                 align-self: center;
                 padding: 60px;
-                max-inline-size: 400px;
+                max-inline-size: 330px;
             }
             &__article {
                 display: flex;
                 flex-direction: column;
                 align-self: center;
                 max-inline-size: 500px;
+                padding: 30px 20px 0 20px;
                 &__btn {
                     inline-size: 140px;
                     padding: 10px 30px;
@@ -49,21 +50,19 @@
         block-size: 100%;
         padding: 0;
     }
-    &__article {
-        padding: 30px 16px 0 16px;
-    }
 }
 
 @media (min-width: 700px) {
     .section2 {
         &__grid-container {
-            margin: 5%;
+            margin: 30px 30px 50px 30px;
             &__item {
                 flex-direction: row;
                 padding: 0;
                 &__img-wrapper {
                     max-inline-size: 40%;
-                    padding: 9%;
+                    min-inline-size: 40%;
+                    // padding: 9%;
                 }
                 &__article {
                     inline-size: 80%;
@@ -102,15 +101,17 @@
                     padding: 0 60px;
                 }
                 &__article {
-                    inline-size: 80%;
+                    // inline-size: 80%;
                     justify-self: center;
-                    padding: 0 40px;
                 }
             }
         }
     }
     .article1 {
         grid-area: top-left;
+        &__article {
+            padding: 0 40px;
+        }
     }
     .article2 {
         grid-area: aside;
@@ -121,7 +122,7 @@
             margin: 20px 0 30px 0;
         }
         &__article {
-            padding: 0 40px 55px 40px;
+            padding: 0 0 55px 0;
         }
     }
     .article3 {

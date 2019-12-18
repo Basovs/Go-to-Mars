@@ -10,7 +10,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 850px) {
     .section1 {
         flex-direction: row-reverse;
         &__article {
@@ -18,7 +18,7 @@
             padding: 50px 100px;
         }
         .img-wrapper {
-            min-inline-size: 40%;
+            min-inline-size: 45%;
         }
     }
 }
