@@ -1,29 +1,33 @@
-.faq__section1 {
+.faq-section1 {
     display: grid;
     gap: 16px;
     background-color: $color--section-background;
     padding: 16px;
     &__title {
-        padding: 40px 0;
+        padding: 40px 0 20px 0;
         text-align: center;
+        color: #2c4f80;
     }
     &__grid-item1 {
-        padding: 16px;
+        padding: 40px 20px;
         background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
         &__title {
             padding: 26px 0;
         }
     }
     &__grid-item2 {
-        padding: 16px;
+        padding: 40px 20px;
         background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
         &__title {
             padding: 26px 0;
         }
         &__list {
-            padding: 20px 0 20px 20px;
+            padding: 0 0 0 50px;
             li {
                 font-weight: bold;
+                padding: 5px 0;
             }
         }
     }
@@ -31,15 +35,49 @@
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
+        padding: 0 0 40px 0;
+        box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
         &__article {
-            padding: 16px;
+            padding: 20px;
             &__title {
                 padding: 20px 0;
             }
         }
-        &__img {
-            inline-size: 100%;
-            object-fit: cover;
+    }
+}
+
+@media (min-width: 900px) {
+    .faq-section1 {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "aside top-right"
+            "aside bottom-right";
+        gap: 20px;
+        padding-bottom: 30px;
+        &__title {
+            grid-area: title;
+        }
+        &__grid-item1 {
+            grid-area: aside;
+        }
+        &__grid-item2 {
+            grid-area: top-right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__grid-item3 {
+            grid-area: bottom-right;
+            flex-direction: row-reverse;
+            padding: 0;
+            .img-wrapper {
+                min-inline-size: 50%;
+            }
+            &__article {
+                align-self: center;
+            }
         }
     }
 }

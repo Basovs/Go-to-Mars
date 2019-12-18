@@ -35,3 +35,49 @@
     background: none;
     color: $color--main-footer-background;
 }
+
+@media (min-width: 600px) {
+    .jtc-section1__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr auto 1fr;
+        grid-template-areas:
+            "first-name last-name date-of-birth"
+            "professional prime-skill empty"
+            "motivation motivation motivation"
+            "empty btn empty";
+        .first-name {
+            grid-area: first-name;
+        }
+        .last-name {
+            grid-area: last-name;
+        }
+        .date-of-birth {
+            grid-area: date-of-birth;
+        }
+        .professional {
+            grid-area: professional;
+        }
+        .prime-skill {
+            grid-area: prime-skill;
+        }
+        .motivation {
+            grid-area: motivation;
+        }
+        .btn {
+            grid-area: btn;
+        }
+        .input-wrapper {
+            &__input {
+                border-radius: 5px;
+                border: solid 1px $color--main-footer-background;
+                block-size: 39px;
+                font-size: 16px;
+                margin-top: 3px;
+                padding: 0 10px;
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+}

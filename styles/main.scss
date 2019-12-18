@@ -1,19 +1,19 @@
 .ball {
-  animation-name: spinner;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  /* Tells the animation what to-do outside */
-  animation-fill-mode: both;
-  animation-direction: alternate;
+    animation-name: spinner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* Tells the animation what to-do outside */
+    animation-fill-mode: both;
+    animation-direction: alternate;
 }
 
 @keyframes spinner {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360);
-  }
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360);
+    }
 }
 @import "variables/variables";
 @import "partial/nav";
@@ -26,12 +26,31 @@
 @import "partial/footer";
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3 {
+    color: #e32700;
+}
+.img-wrapper {
+    position: relative;
+    &__img {
+        display: block;
+        object-fit: cover;
+        block-size: 100%;
+        max-block-size: 100%;
+        inline-size: 100%;
+        max-inline-size: 100%;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
 }
 
 // .active,

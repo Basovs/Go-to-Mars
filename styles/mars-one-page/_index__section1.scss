@@ -2,20 +2,23 @@
     display: flex;
     flex-direction: column;
     &__article {
-        max-inline-size: 60%;
-        padding: 50px 20px 40px 40px;
+        padding: 50px 20px 40px 20px;
+        align-self: center;
         &__title {
             padding-bottom: 20px;
         }
     }
 }
 
-@media (min-width: 830px) {
+@media (min-width: 900px) {
     .section1 {
         flex-direction: row-reverse;
         &__article {
             align-self: center;
             padding: 50px 100px;
+        }
+        .img-wrapper {
+            min-inline-size: 40%;
         }
     }
 }

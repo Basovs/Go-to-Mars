@@ -1,12 +1,31 @@
-.faq__section2 {
+.faq-section2 {
     &__img {
         inline-size: 100%;
         object-fit: cover;
     }
     &__article {
-        margin: 0 16px 50px 16px;
+        padding: 20px 20px 40px 20px;
         &__title {
             padding: 20px 0;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .faq-section2 {
+        display: flex;
+        &__article {
+            padding: 50px;
+        }
+        .img-wrapper {
+            max-inline-size: 40%;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .faq-section2 {
+        .img-wrapper {
+            max-inline-size: 30%;
         }
     }
 }
