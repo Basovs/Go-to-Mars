@@ -25,6 +25,7 @@
         }
         &__list {
             padding: 0 0 0 50px;
+            margin: 20px 0;
             li {
                 font-weight: bold;
                 padding: 5px 0;
@@ -67,6 +68,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            &__list {
+                margin: 0;
+            }
         }
         &__grid-item3 {
             grid-area: bottom-right;

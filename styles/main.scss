@@ -1,29 +1,12 @@
-.ball {
-    animation-name: spinner;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    /* Tells the animation what to-do outside */
-    animation-fill-mode: both;
-    animation-direction: alternate;
-}
-
-@keyframes spinner {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360);
-    }
-}
 @import "variables/variables";
 @import "partial/nav";
 @import "partial/header";
+@import "partial/footer";
 @import "mars-one-page/index__section1";
 @import "mars-one-page/index__section2";
 @import "FAQ-page/faq__section1";
 @import "FAQ-page/faq__section2";
 @import "join-the-crew-page/jtc-section1";
-@import "partial/footer";
 
 * {
     padding: 0;
@@ -53,8 +36,20 @@ h3 {
     }
 }
 
-// .active,
-// .btn:hover {
-//     background-color: #666;
-//     color: white;
-// }
+.ball {
+    animation-name: spinner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* Tells the animation what to-do outside */
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360);
+    }
+}
