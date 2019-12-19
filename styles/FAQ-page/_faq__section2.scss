@@ -20,17 +20,18 @@
         .mars {
             inline-size: 10%;
             transform-origin: -30vw 0;
-            animation: spin-right 9s linear infinite;
+            animation: spin-right 10s linear infinite;
             left: 30vw;
             top: 25vw;
         }
         .sun {
             inline-size: 20%;
+            animation: spin-right 12s linear infinite;
         }
         .earth {
             inline-size: 10%;
             transform-origin: -13vw 0;
-            animation: spin-right 6s linear infinite;
+            animation: spin-right 7s linear infinite;
             left: 17vw;
             top: -8vw;
         }
@@ -48,19 +49,12 @@
         .orbit-container {
             block-size: unset;
             .mars {
-                inline-size: 10%;
                 transform-origin: -9vw 0;
-                animation: spin-right 9s linear infinite;
                 left: 9vw;
                 top: 5vw;
             }
-            .sun {
-                inline-size: 20%;
-            }
             .earth {
-                inline-size: 10%;
                 transform-origin: -4vw 0;
-                animation: spin-right 6s linear infinite;
                 left: 5vw;
                 top: -3vw;
             }

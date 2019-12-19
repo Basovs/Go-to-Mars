@@ -570,22 +570,24 @@
   inline-size: 10%;
   -webkit-transform-origin: -30vw 0;
           transform-origin: -30vw 0;
-  -webkit-animation: spin-right 9s linear infinite;
-          animation: spin-right 9s linear infinite;
+  -webkit-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
   left: 30vw;
   top: 25vw;
 }
 
 .faq-section2 .orbit-container .sun {
   inline-size: 20%;
+  -webkit-animation: spin-right 12s linear infinite;
+          animation: spin-right 12s linear infinite;
 }
 
 .faq-section2 .orbit-container .earth {
   inline-size: 10%;
   -webkit-transform-origin: -13vw 0;
           transform-origin: -13vw 0;
-  -webkit-animation: spin-right 6s linear infinite;
-          animation: spin-right 6s linear infinite;
+  -webkit-animation: spin-right 7s linear infinite;
+          animation: spin-right 7s linear infinite;
   left: 17vw;
   top: -8vw;
 }
@@ -608,23 +610,14 @@
     block-size: unset;
   }
   .faq-section2 .orbit-container .mars {
-    inline-size: 10%;
     -webkit-transform-origin: -9vw 0;
             transform-origin: -9vw 0;
-    -webkit-animation: spin-right 9s linear infinite;
-            animation: spin-right 9s linear infinite;
     left: 9vw;
     top: 5vw;
   }
-  .faq-section2 .orbit-container .sun {
-    inline-size: 20%;
-  }
   .faq-section2 .orbit-container .earth {
-    inline-size: 10%;
     -webkit-transform-origin: -4vw 0;
             transform-origin: -4vw 0;
-    -webkit-animation: spin-right 6s linear infinite;
-            animation: spin-right 6s linear infinite;
     left: 5vw;
     top: -3vw;
   }
