@@ -173,6 +173,11 @@
   padding-bottom: 20px;
 }
 
+.section1__article__text--accent {
+  font-weight: bold;
+  color: #e32700;
+}
+
 @media (min-width: 850px) {
   .section1 {
     -webkit-box-orient: horizontal;
@@ -594,6 +599,7 @@
 .jtc-section1__title {
   -ms-grid-column-align: center;
       justify-self: center;
+  padding-bottom: 20px;
 }
 
 .jtc-section1__text {
