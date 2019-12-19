@@ -13,7 +13,7 @@
         background-color: #ffffff;
         box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
         &__title {
-            padding: 26px 0;
+            padding: 0 0 26px 0;
         }
     }
     &__grid-item2 {
@@ -21,7 +21,7 @@
         background-color: #ffffff;
         box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
         &__title {
-            padding: 26px 0;
+            padding: 0 0 26px 0;
         }
         &__list {
             padding: 0 0 0 50px;
@@ -41,7 +41,7 @@
         &__article {
             padding: 20px;
             &__title {
-                padding: 20px 0;
+                padding: 0 0 20px 0;
             }
         }
     }

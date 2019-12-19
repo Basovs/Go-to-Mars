@@ -12,7 +12,7 @@
         <title>Go To Mars - Join The Crew</title>
     </head>
     <body>
-        <header class="main-header">
+        <header class="main-header jtc-header">
             <nav class="main-nav">
                 <img src="img/logo.svg" alt="Logo" class="main-nav__logo" />
                 <ul class="main-nav__main-list">
@@ -37,6 +37,14 @@
                     </li>
                 </ul>
             </nav>
+            <article class="main-header__article">
+                <h1 class="main-header__article__title">
+                    Be brave, join the journey!
+                </h1>
+                <h2 class="main-header__article__text">
+                    Be one of the next heroes in space
+                </h2>
+            </article>
         </header>
         <section class="jtc-section1">
             <h2 class="jtc-section1__title">Join us in the mission</h2>
@@ -88,15 +96,13 @@
                 <label for="motivation" class="input-wrapper motivation"
                     >Motivation<br />
                     <textarea
-                        class="input-wrapper__input"
+                        class="input-wrapper__input motivation__input"
                         name="motivation"
                         cols="30"
                         rows="10"
                     ></textarea>
                 </label>
-                <button
-                    class="input-wrapper__input jtc-section1__form__btn btn"
-                >
+                <button class="input-wrapper__input input-wrapper__btn btn">
                     Submit
                 </button>
             </article>

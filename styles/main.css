@@ -80,7 +80,7 @@
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   justify-self: flex-end;
-  padding: 15vh 20vw 0 0;
+  padding: 15vh 8vw 0 4vh;
   z-index: 2;
   max-inline-size: 420px;
 }
@@ -92,7 +92,7 @@
   padding-bottom: 20px;
   color: #ffffff;
   border-bottom: solid 5px #ffffff;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .main-header__article__text {
@@ -111,8 +111,8 @@
   top: -70vh;
   left: -10vw;
   border-radius: 100% / 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00132c), to(rgba(21, 52, 98, 0.9)));
-  background: linear-gradient(#00132c, rgba(21, 52, 98, 0.9));
+  background: -webkit-gradient(linear, left top, left bottom, from(#00132c), to(#153462));
+  background: linear-gradient(#00132c, #153462);
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   border: 15px solid #436dac;
@@ -120,7 +120,7 @@
 
 @media (min-width: 1100px) {
   .main-header::after {
-    left: -40vh;
+    left: -50vh;
     top: -80vh;
   }
 }
@@ -393,7 +393,7 @@
 }
 
 .faq-section1__grid-item1__title {
-  padding: 26px 0;
+  padding: 0 0 26px 0;
 }
 
 .faq-section1__grid-item2 {
@@ -404,7 +404,7 @@
 }
 
 .faq-section1__grid-item2__title {
-  padding: 26px 0;
+  padding: 0 0 26px 0;
 }
 
 .faq-section1__grid-item2__list {
@@ -436,7 +436,7 @@
 }
 
 .faq-section1__grid-item3__article__title {
-  padding: 20px 0;
+  padding: 0 0 20px 0;
 }
 
 @media (min-width: 900px) {
@@ -510,7 +510,7 @@
 }
 
 .faq-section2__article__title {
-  padding: 20px 0;
+  padding: 0 0 20px 0;
 }
 
 @media (min-width: 800px) {
@@ -533,6 +533,59 @@
   }
 }
 
+.jtc-header {
+  background-image: url(../../img/join-the-crew-page/hero-3.jpg);
+}
+
+.jtc-header .main-header__article {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  justify-self: flex-start;
+  padding: 45vh 8vw 0 10vw;
+  z-index: 2;
+  max-inline-size: 420px;
+}
+
+.jtc-header .main-header__article__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 20px 10px 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  border-bottom: solid 5px #ffffff;
+  font-size: 3rem;
+}
+
+.jtc-header .main-header__article__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 20px;
+  color: #436dac;
+  font-size: 2rem;
+}
+
+.jtc-header::after {
+  position: absolute;
+  top: 30vh;
+  left: -30vw;
+  -webkit-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+@media (min-width: 900px) {
+  .jtc-header::after {
+    top: 40vh;
+    left: -30vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .jtc-header::after {
+    top: 50vh;
+    left: -30vw;
+  }
+}
+
 .jtc-section1 {
   display: -ms-grid;
   display: grid;
@@ -545,10 +598,10 @@
 }
 
 .jtc-section1__text {
-  max-inline-size: 260px;
+  max-inline-size: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
-  padding: 10px 0 40px 0;
+  padding: 10px 16px 40px 16px;
 }
 
 .jtc-section1__form {
@@ -577,9 +630,8 @@
           box-shadow: unset;
 }
 
-.jtc-section1__form__btn {
-  margin-top: 20px;
-  background: none;
+.input-wrapper__btn {
+  background-color: #ffffff;
   color: #2c4f80;
 }
 
@@ -591,7 +643,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr auto 1fr;
         grid-template-rows: 1fr 1fr auto 1fr;
-        grid-template-areas: "first-name last-name date-of-birth" "professional prime-skill empty" "motivation motivation motivation" "empty btn empty";
+        grid-template-areas: "first-name last-name date-of-birth" "professional prime-skill ." "motivation motivation motivation" ". btn .";
+    -webkit-column-gap: 5vw;
+            column-gap: 5vw;
+    row-gap: 2vw;
+    padding: 5vw;
   }
   .jtc-section1__form .first-name {
     -ms-grid-row: 1;
@@ -607,6 +663,9 @@
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: date-of-birth;
+    max-inline-size: 60%;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .jtc-section1__form .professional {
     -ms-grid-row: 2;
@@ -624,23 +683,13 @@
     -ms-grid-column-span: 3;
     grid-area: motivation;
   }
+  .jtc-section1__form .motivation__input {
+    min-block-size: 200px;
+  }
   .jtc-section1__form .btn {
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: btn;
-  }
-  .jtc-section1__form .input-wrapper__input {
-    border-radius: 5px;
-    border: solid 1px #2c4f80;
-    block-size: 39px;
-    font-size: 16px;
-    margin-top: 3px;
-    padding: 0 10px;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
 }
 
