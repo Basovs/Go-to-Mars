@@ -567,27 +567,27 @@
 }
 
 .faq-section2 .orbit-container .mars {
-  inline-size: 2.8vw;
-  -webkit-transform-origin: -290% 0;
-          transform-origin: -290% 0;
+  inline-size: 10%;
+  -webkit-transform-origin: -30vw 0;
+          transform-origin: -30vw 0;
   -webkit-animation: spin-right 9s linear infinite;
           animation: spin-right 9s linear infinite;
-  left: 9vw;
-  top: 5vw;
+  left: 30vw;
+  top: 25vw;
 }
 
 .faq-section2 .orbit-container .sun {
-  inline-size: 6vw;
+  inline-size: 20%;
 }
 
 .faq-section2 .orbit-container .earth {
-  inline-size: 2.8vw;
-  -webkit-transform-origin: -4vw 0;
-          transform-origin: -4vw 0;
+  inline-size: 10%;
+  -webkit-transform-origin: -13vw 0;
+          transform-origin: -13vw 0;
   -webkit-animation: spin-right 6s linear infinite;
           animation: spin-right 6s linear infinite;
-  left: 5vw;
-  top: -3vw;
+  left: 17vw;
+  top: -8vw;
 }
 
 .faq-section2__article {
@@ -606,6 +606,27 @@
   }
   .faq-section2 .orbit-container {
     block-size: unset;
+  }
+  .faq-section2 .orbit-container .mars {
+    inline-size: 10%;
+    -webkit-transform-origin: -9vw 0;
+            transform-origin: -9vw 0;
+    -webkit-animation: spin-right 9s linear infinite;
+            animation: spin-right 9s linear infinite;
+    left: 9vw;
+    top: 5vw;
+  }
+  .faq-section2 .orbit-container .sun {
+    inline-size: 20%;
+  }
+  .faq-section2 .orbit-container .earth {
+    inline-size: 10%;
+    -webkit-transform-origin: -4vw 0;
+            transform-origin: -4vw 0;
+    -webkit-animation: spin-right 6s linear infinite;
+            animation: spin-right 6s linear infinite;
+    left: 5vw;
+    top: -3vw;
   }
   .faq-section2__article {
     padding: 70px;
