@@ -14,6 +14,11 @@
         margin: 0 10px;
         padding: 20px 20px;
         box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+        .motivation {
+            &__input {
+                min-block-size: 200px;
+            }
+        }
     }
 }
 .input-wrapper {
@@ -37,44 +42,49 @@
     }
 }
 
-@media (min-width: 600px) {
-    .jtc-section1__form {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr auto 1fr;
-        grid-template-areas:
-            "first-name last-name date-of-birth"
-            "professional prime-skill ."
-            "motivation motivation motivation"
-            ". btn .";
-        column-gap: 5vw;
-        row-gap: 2vw;
-        padding: 5vw;
-        .first-name {
-            grid-area: first-name;
-        }
-        .last-name {
-            grid-area: last-name;
-        }
-        .date-of-birth {
-            grid-area: date-of-birth;
-            max-inline-size: 60%;
-            justify-self: center;
-        }
-        .professional {
-            grid-area: professional;
-        }
-        .prime-skill {
-            grid-area: prime-skill;
-        }
-        .motivation {
-            grid-area: motivation;
-            &__input {
-                min-block-size: 200px;
+@media (min-width: 900px) {
+    .jtc-section1 {
+        padding: 70px 100px;
+        &__form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr auto 1fr;
+            grid-template-areas:
+                "first-name last-name date-of-birth"
+                "professional prime-skill ."
+                "motivation motivation motivation"
+                ". btn .";
+            column-gap: 5vw;
+            row-gap: 2vw;
+            padding: 40px 70px 0 70px;
+            .input-wrapper {
+                min-inline-size: 150px;
             }
-        }
-        .btn {
-            grid-area: btn;
+            .first-name {
+                grid-area: first-name;
+            }
+            .last-name {
+                grid-area: last-name;
+            }
+            .date-of-birth {
+                grid-area: date-of-birth;
+                justify-self: center;
+            }
+            .professional {
+                grid-area: professional;
+            }
+            .prime-skill {
+                grid-area: prime-skill;
+            }
+            .motivation {
+                grid-area: motivation;
+            }
+            .btn {
+                margin-top: 10px;
+                grid-area: btn;
+                max-inline-size: 50%;
+                justify-self: center;
+            }
         }
     }
 }

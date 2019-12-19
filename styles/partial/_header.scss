@@ -49,10 +49,13 @@
     .main-header__article {
         top: 20vh;
     }
+    .main-header::after {
+        left: -50vh;
+    }
 }
 @media (min-width: 1100px) {
     .main-header::after {
         left: -50vh;
-        top: -80vh;
+        top: -90vh;
     }
 }
