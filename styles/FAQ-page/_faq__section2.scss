@@ -15,23 +15,24 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-inline-size: 30%;
+        min-inline-size: 30vw;
+        block-size: 100vw;
         .mars {
-            inline-size: 8%;
-            transform-origin: -400% 0;
-            animation: spin-right 8s linear infinite;
-            left: 30%;
-            top: 20%;
+            inline-size: 2.8vw;
+            transform-origin: -290% 0;
+            animation: spin-right 9s linear infinite;
+            left: 9vw;
+            top: 5vw;
         }
         .sun {
-            inline-size: 25%;
+            inline-size: 6vw;
         }
         .earth {
-            inline-size: 9%;
-            transform-origin: -180% 0;
+            inline-size: 2.8vw;
+            transform-origin: -4vw 0;
             animation: spin-right 6s linear infinite;
-            left: 20%;
-            top: -10%;
+            left: 5vw;
+            top: -3vw;
         }
     }
     &__article {
@@ -44,6 +45,9 @@
 
 @media (min-width: 800px) {
     .faq-section2 {
+        .orbit-container {
+            block-size: unset;
+        }
         display: flex;
         &__article {
             padding: 70px;
