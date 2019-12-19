@@ -530,13 +530,32 @@
   }
 }
 
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .faq-section2 .orbit-container {
   background-color: grey;
   background-image: url(../../img/FAQ-page/hero-2.jpg);
   background-position: center;
   background-size: cover;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -547,15 +566,27 @@
 }
 
 .faq-section2 .orbit-container .mars {
-  inline-size: 10%;
+  inline-size: 8%;
+  -webkit-transform-origin: -400% 0;
+          transform-origin: -400% 0;
+  -webkit-animation: spin-right 8s linear infinite;
+          animation: spin-right 8s linear infinite;
+  left: 30%;
+  top: 20%;
 }
 
 .faq-section2 .orbit-container .sun {
-  inline-size: 30%;
+  inline-size: 25%;
 }
 
 .faq-section2 .orbit-container .earth {
-  inline-size: 10%;
+  inline-size: 9%;
+  -webkit-transform-origin: -180% 0;
+          transform-origin: -180% 0;
+  -webkit-animation: spin-right 6s linear infinite;
+          animation: spin-right 6s linear infinite;
+  left: 20%;
+  top: -10%;
 }
 
 .faq-section2__article {

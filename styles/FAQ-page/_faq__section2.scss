@@ -1,3 +1,9 @@
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .faq-section2 {
     .orbit-container {
         background-color: grey;
@@ -5,18 +11,27 @@
         background-position: center;
         background-size: cover;
 
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-inline-size: 30%;
         .mars {
-            inline-size: 10%;
+            inline-size: 8%;
+            transform-origin: -400% 0;
+            animation: spin-right 8s linear infinite;
+            left: 30%;
+            top: 20%;
         }
         .sun {
-            inline-size: 30%;
+            inline-size: 25%;
         }
         .earth {
-            inline-size: 10%;
+            inline-size: 9%;
+            transform-origin: -180% 0;
+            animation: spin-right 6s linear infinite;
+            left: 20%;
+            top: -10%;
         }
     }
     &__article {
