@@ -3,7 +3,9 @@
     .main-header__article {
         box-sizing: content-box;
         justify-self: flex-start;
-        padding: 50vh 8vw 10vh 10vw;
+        left: 0;
+        top: unset;
+        bottom: 6vh;
         z-index: 2;
         max-inline-size: 420px;
         &__title {
@@ -13,18 +15,27 @@
 }
 .jtc-header::after {
     position: absolute;
-    top: 40vh;
+    top: 35vh;
     left: -50vw;
     transform: rotate(195deg);
 }
-@media (min-width: 6500px) {
+@media (min-width: 397px) {
+    .jtc-header::after {
+        top: 40vh;
+    }
+}
+@media (min-width: 407px) {
+    .jtc-header::after {
+        top: 45vh;
+    }
+}
+@media (min-width: 650px) {
     .jtc-header::after {
         left: -30vw;
     }
 }
 @media (min-width: 800px) {
     .jtc-header::after {
-        top: 40vh;
         left: -30vw;
     }
 }

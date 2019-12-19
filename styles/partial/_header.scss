@@ -8,10 +8,13 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    position: relative;
     &__article {
+        position: absolute;
         box-sizing: content-box;
-        justify-self: flex-end;
-        padding: 12vh 8vw 0 4vh;
+        top: 25vh;
+        right: 6vw;
+        padding-left: 6vw;
         z-index: 2;
         max-inline-size: 420px;
         &__title {
@@ -41,6 +44,11 @@
     background: linear-gradient(#00132c, rgb(21, 52, 98));
     transform: rotate(15deg);
     border: 15px solid #436dac;
+}
+@media (min-width: 700px) {
+    .main-header__article {
+        top: 20vh;
+    }
 }
 @media (min-width: 1100px) {
     .main-header::after {

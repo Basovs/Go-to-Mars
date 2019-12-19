@@ -1,5 +1,5 @@
 .main-nav {
-  z-index: 1;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,13 +74,16 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .main-header__article {
+  position: absolute;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  justify-self: flex-end;
-  padding: 12vh 8vw 0 4vh;
+  top: 25vh;
+  right: 6vw;
+  padding-left: 6vw;
   z-index: 2;
   max-inline-size: 420px;
 }
@@ -116,6 +119,12 @@
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   border: 15px solid #436dac;
+}
+
+@media (min-width: 700px) {
+  .main-header__article {
+    top: 20vh;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -546,7 +555,9 @@
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   justify-self: flex-start;
-  padding: 50vh 8vw 10vh 10vw;
+  left: 0;
+  top: unset;
+  bottom: 6vh;
   z-index: 2;
   max-inline-size: 420px;
 }
@@ -557,13 +568,25 @@
 
 .jtc-header::after {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   left: -50vw;
   -webkit-transform: rotate(195deg);
           transform: rotate(195deg);
 }
 
-@media (min-width: 6500px) {
+@media (min-width: 397px) {
+  .jtc-header::after {
+    top: 40vh;
+  }
+}
+
+@media (min-width: 407px) {
+  .jtc-header::after {
+    top: 45vh;
+  }
+}
+
+@media (min-width: 650px) {
   .jtc-header::after {
     left: -30vw;
   }
@@ -571,7 +594,6 @@
 
 @media (min-width: 800px) {
   .jtc-header::after {
-    top: 40vh;
     left: -30vw;
   }
 }
