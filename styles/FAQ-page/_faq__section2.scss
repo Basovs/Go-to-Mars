@@ -1,7 +1,25 @@
 .faq-section2 {
-    &__img {
-        inline-size: 100%;
-        object-fit: cover;
+    .orbit-container {
+        background-color: grey;
+        background-image: url(../../img/FAQ-page/hero-2.jpg);
+        background-position: center;
+        background-size: cover;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        min-inline-size: 30%;
+        .mars {
+            inline-size: 10%;
+        }
+        .sun {
+            inline-size: 30%;
+        }
+        .earth {
+            inline-size: 10%;
+        }
     }
     &__article {
         padding: 20px 20px 40px 20px;
@@ -15,17 +33,7 @@
     .faq-section2 {
         display: flex;
         &__article {
-            padding: 50px;
-        }
-        .img-wrapper {
-            max-inline-size: 40%;
-        }
-    }
-}
-@media (min-width: 1000px) {
-    .faq-section2 {
-        .img-wrapper {
-            max-inline-size: 30%;
+            padding: 70px;
         }
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main-nav {
   z-index: 10;
   display: -webkit-box;
@@ -153,7 +154,6 @@
 .main-footer__text {
   font-size: 0.6rem;
   padding-top: 1.8rem;
-  max-inline-size: 250px;
 }
 
 .main-footer__text--accent {
@@ -422,13 +422,20 @@
 }
 
 .faq-section1__grid-item2__list {
-  padding: 0 0 0 50px;
   margin: 20px 0;
+  list-style: none;
 }
 
 .faq-section1__grid-item2__list li {
   font-weight: bold;
   padding: 5px 0;
+  font-size: 0.84rem;
+}
+
+.faq-section1__grid-item2__list li:before {
+  content: "•";
+  padding-right: 20px;
+  color: #e32700;
 }
 
 .faq-section1__grid-item3 {
@@ -453,7 +460,7 @@
   padding: 0 0 20px 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
   .faq-section1 {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
@@ -468,6 +475,9 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: title;
+  }
+  .faq-section1__grid-item {
+    padding: 60px;
   }
   .faq-section1__grid-item1 {
     -ms-grid-row: 2;
@@ -493,6 +503,9 @@
   .faq-section1__grid-item2__list {
     margin: 0;
   }
+  .faq-section1__grid-item2__list li:before {
+    padding-right: 30px;
+  }
   .faq-section1__grid-item3 {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
@@ -510,13 +523,40 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding: 60px;
   }
 }
 
-.faq-section2__img {
-  inline-size: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.faq-section2 .orbit-container {
+  background-color: grey;
+  background-image: url(../../img/FAQ-page/hero-2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  min-inline-size: 30%;
+}
+
+.faq-section2 .orbit-container .mars {
+  inline-size: 10%;
+}
+
+.faq-section2 .orbit-container .sun {
+  inline-size: 30%;
+}
+
+.faq-section2 .orbit-container .earth {
+  inline-size: 10%;
 }
 
 .faq-section2__article {
@@ -534,16 +574,7 @@
     display: flex;
   }
   .faq-section2__article {
-    padding: 50px;
-  }
-  .faq-section2 .img-wrapper {
-    max-inline-size: 40%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .faq-section2 .img-wrapper {
-    max-inline-size: 30%;
+    padding: 70px;
   }
 }
 
