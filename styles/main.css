@@ -246,6 +246,11 @@
   max-inline-size: 330px;
 }
 
+.section2__grid-container__item__img-wrapper .img-wrapper__img {
+  -webkit-animation: spin-right 20s linear infinite;
+          animation: spin-right 20s linear infinite;
+}
+
 .section2__grid-container__item__article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +278,13 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.section2__grid-container__item__article__btn:hover {
+  background-color: #2c4f80;
+  color: #ffffff;
 }
 
 .article3 {
@@ -285,6 +297,11 @@
   block-size: 100%;
   inline-size: 100%;
   padding: 0;
+}
+
+.article3__img-wrapper .img-wrapper__img {
+  -webkit-animation: unset;
+          animation: unset;
 }
 
 @media (min-width: 700px) {
@@ -530,20 +547,6 @@
   }
 }
 
-@-webkit-keyframes spin-right {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin-right {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 .faq-section2 .orbit-container {
   background-color: grey;
   background-image: url(../../img/FAQ-page/hero-2.jpg);
@@ -743,6 +746,14 @@
 .input-wrapper__btn {
   background-color: #ffffff;
   color: #2c4f80;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.input-wrapper__btn:hover {
+  background-color: #2c4f80;
+  color: #ffffff;
 }
 
 @media (min-width: 900px) {
@@ -840,39 +851,17 @@ h3 {
   max-inline-size: 100%;
 }
 
-.ball {
-  -webkit-animation-name: spinner;
-          animation-name: spinner;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  /* Tells the animation what to-do outside */
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
+@-webkit-keyframes spin-right {
   100% {
-    -webkit-transform: rotate(360);
-            transform: rotate(360);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
+@keyframes spin-right {
   100% {
-    -webkit-transform: rotate(360);
-            transform: rotate(360);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
