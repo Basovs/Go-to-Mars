@@ -316,7 +316,7 @@
     padding: 0;
   }
   .section2__grid-container__item__img-wrapper {
-    inline-size: 30%;
+    inline-size: 40%;
     min-inline-size: 40%;
     padding: 60px;
   }
@@ -349,6 +349,7 @@
   }
   .section2__grid-container__item__img-wrapper {
     padding: 0 60px;
+    min-inline-size: unset;
   }
   .section2__grid-container__item__article {
     -ms-grid-column-align: center;
