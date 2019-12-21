@@ -349,7 +349,6 @@
   }
   .section2__grid-container__item__img-wrapper {
     padding: 0 60px;
-    min-inline-size: unset;
   }
   .section2__grid-container__item__article {
     -ms-grid-column-align: center;
@@ -377,8 +376,9 @@
             justify-content: space-between;
   }
   .article2__img-wrapper {
-    min-inline-size: 70%;
-    margin: 40px 0 30px 0;
+    min-inline-size: 26vw;
+    min-block-size: 26vw;
+    margin: 25% 0 30px 0;
   }
   .article2__article {
     padding: 0 40px 55px 40px;
