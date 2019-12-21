@@ -548,7 +548,6 @@
 }
 
 .faq-section2 .orbit-container {
-  background-color: grey;
   background-image: url(../../img/FAQ-page/hero-2.jpg);
   background-position: center;
   background-size: cover;
@@ -611,6 +610,7 @@
   }
   .faq-section2 .orbit-container {
     block-size: unset;
+    min-block-size: 30vw;
   }
   .faq-section2 .orbit-container .mars {
     -webkit-transform-origin: -9vw 0;
