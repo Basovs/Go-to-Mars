@@ -73,6 +73,7 @@
                 padding: 0;
                 &__img-wrapper {
                     inline-size: 40%;
+                    min-inline-size: 40%;
                     padding: 60px;
                 }
                 &__article {
@@ -123,7 +124,7 @@
         flex-direction: column;
         justify-content: space-between;
         &__img-wrapper {
-            inline-size: 100%;
+            min-inline-size: 70%;
             margin: 40px 0 30px 0;
         }
         &__article {
