@@ -115,6 +115,10 @@
     }
     .article1 {
         grid-area: top-left;
+        &__img-wrapper {
+            min-inline-size: 26vw;
+            min-block-size: 26vw;
+        }
         &__article {
             padding: 0 40px;
         }

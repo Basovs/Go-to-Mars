@@ -359,6 +359,10 @@
     -ms-grid-column: 1;
     grid-area: top-left;
   }
+  .article1__img-wrapper {
+    min-inline-size: 26vw;
+    min-block-size: 26vw;
+  }
   .article1__article {
     padding: 0 40px;
   }
