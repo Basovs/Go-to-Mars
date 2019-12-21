@@ -1,6 +1,5 @@
 .faq-section2 {
     .orbit-container {
-        background-color: grey;
         background-image: url(../../img/FAQ-page/hero-2.jpg);
         background-position: center;
         background-size: cover;
@@ -41,7 +40,7 @@
 @media (min-width: 800px) {
     .faq-section2 {
         .orbit-container {
-            block-size: unset;
+            min-block-size: 30vw;
             .mars {
                 transform-origin: -9vw 0;
                 left: 9vw;
