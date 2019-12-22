@@ -349,6 +349,7 @@
   }
   .section2__grid-container__item__img-wrapper {
     padding: 0 60px;
+    inline-size: unset;
   }
   .section2__grid-container__item__article {
     -ms-grid-column-align: center;
@@ -362,6 +363,7 @@
   .article1__img-wrapper {
     min-inline-size: 26vw;
     min-block-size: 26vw;
+    margin: 20px 0;
   }
   .article1__article {
     padding: 0 40px;
@@ -407,6 +409,7 @@
   }
   .article3__img-wrapper {
     padding: 0;
+    inline-size: 40%;
   }
 }
 
