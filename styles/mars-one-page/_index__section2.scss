@@ -74,7 +74,7 @@
                 &__img-wrapper {
                     inline-size: 40%;
                     min-inline-size: 40%;
-                    padding: 60px;
+                    padding: 7%;
                 }
                 &__article {
                     padding: 20px 40px;
@@ -105,22 +105,18 @@
             &__item {
                 display: flex;
                 &__img-wrapper {
-                    padding: 0 60px;
-                    inline-size: unset;
                 }
                 &__article {
                     justify-self: center;
+                    h3 {
+                        padding-bottom: 30px;
+                    }
                 }
             }
         }
     }
     .article1 {
         grid-area: top-left;
-        &__img-wrapper {
-            min-inline-size: 26vw;
-            min-block-size: 26vw;
-            margin: 20px 0;
-        }
         &__article {
             padding: 0 40px;
         }
@@ -130,9 +126,10 @@
         flex-direction: column;
         justify-content: space-between;
         &__img-wrapper {
-            min-inline-size: 26vw;
-            min-block-size: 26vw;
-            margin: 25% 0 30px 0;
+            min-inline-size: 70%;
+            min-block-size: 7%;
+            margin: 3% 0 0 0;
+            padding: 9%;
         }
         &__article {
             padding: 0 40px 55px 40px;
@@ -147,6 +144,9 @@
             justify-content: space-between;
             justify-self: unset;
             align-self: unset;
+            h3 {
+                padding-bottom: 0px;
+            }
         }
         &__img-wrapper {
             padding: 0;

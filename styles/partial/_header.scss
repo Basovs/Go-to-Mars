@@ -59,3 +59,12 @@
         top: -90vh;
     }
 }
+
+@media (min-width: 800px) {
+    .main-header__article {
+        right: 12vw;
+        &__title {
+            font-size: 4rem;
+        }
+    }
+}

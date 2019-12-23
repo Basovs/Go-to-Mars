@@ -22,6 +22,16 @@ h2,
 h3 {
     color: #e32700;
 }
+
+@media (min-width: 1778px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.15rem;
+    }
+}
+
 .img-wrapper {
     position: relative;
     &__img {
