@@ -223,7 +223,6 @@
 }
 
 .section2__title {
-  font-size: 2rem;
   text-align: center;
   padding: 20px 0;
 }
@@ -846,18 +845,49 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h1,
 h2,
 h3 {
   color: #e32700;
 }
 
-@media (min-width: 1778px) {
+@media (min-width: 1500px) {
+  h2 {
+    font-size: 2.2rem;
+  }
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1778px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.95rem;
+  }
+  p {
+    font-size: 1.4rem;
   }
 }
 
