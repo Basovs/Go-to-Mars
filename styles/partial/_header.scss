@@ -53,12 +53,6 @@
         left: -50vh;
     }
 }
-@media (min-width: 1100px) {
-    .main-header::after {
-        left: -50vh;
-        top: -90vh;
-    }
-}
 
 @media (min-width: 800px) {
     .main-header__article {
@@ -67,4 +61,20 @@
             font-size: 4rem;
         }
     }
+}
+
+@media (min-width: 1100px) {
+    .main-header::after {
+        left: -50vh;
+        top: -90vh;
+    }
+}
+
+@media (min-width: 1500px) {
+}
+
+@media (min-width: 1778px) {
+}
+
+@media (min-width: 2000px) {
 }
