@@ -520,7 +520,7 @@
         grid-template-areas: "title title" "aside top-right" "aside bottom-right";
     gap: 20px;
     padding-bottom: 30px;
-    padding: 0;
+    padding: 16px 0;
   }
   .faq-section1__title {
     -ms-grid-row: 1;
